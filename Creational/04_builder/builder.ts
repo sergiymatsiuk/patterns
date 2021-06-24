@@ -81,3 +81,12 @@ function clientCode (director: Director) {
 
 const director = new Director();
 clientCode(director);
+
+// Standard basic cofe:
+// Cofe with milk
+
+// Standard full cofe:
+// Cofe with milk, with sugar, with chocolate
+
+// Custom product:
+// Cofe with milk, with chocolate

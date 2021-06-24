@@ -7,7 +7,6 @@ interface Product {
 abstract class Delivery {
 
     public abstract factoryMethod() : Product;
-
     public anOperation() : string {
         const product = this.factoryMethod();
         return product.operation();
@@ -19,7 +18,6 @@ class SeaDelivery extends Delivery {
     public factoryMethod() : Product {
         return new SeaDeliveryProduct ();
     }
-
 }
 
 class RoadDelivery extends Delivery {
@@ -27,7 +25,6 @@ class RoadDelivery extends Delivery {
     public factoryMethod(): Product {
         return new RoadDeliveryProduct ();
     }
-
 }
 
 
@@ -36,7 +33,6 @@ class SeaDeliveryProduct implements Product {
     public operation(): string {
         return 'delivery to sea'
     }
-
 }
 
 class RoadDeliveryProduct implements Product {
@@ -44,7 +40,6 @@ class RoadDeliveryProduct implements Product {
     public operation() : string {
         return 'delivery to road'
     }
-
 }
 
 function clientCode (creator: Delivery) {

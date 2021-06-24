@@ -18,3 +18,6 @@ cloneCar1.color = 'red';
 
 console.log(car1)
 console.log(cloneCar1)
+
+// Car { model: 'audi', price: 12000, color: 'black' }
+// Car { model: 'audi', price: 12000, color: 'red' }

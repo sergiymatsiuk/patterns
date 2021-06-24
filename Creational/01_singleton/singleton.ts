@@ -1,6 +1,6 @@
 class Matherland {
 
-    private static country : Matherland;
+    private static country : Matherland ;
 
     private constructor () {}
 
