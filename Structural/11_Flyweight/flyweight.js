@@ -10,7 +10,7 @@ var FlyweightFactory = /** @class */ (function () {
     function FlyweightFactory() {
         this.flyweights = {};
     }
-    FlyweightFactory.prototype.get = function (brand, model, color) {
+    FlyweightFactory.prototype.checkOfCar = function (brand, model, color) {
         if (!this.flyweights[brand + ' ' + model]) {
             this.flyweights[brand + ' ' + model] = new Flyweight(brand, model, color);
         }
@@ -24,7 +24,7 @@ var FlyweightFactory = /** @class */ (function () {
 var factory = new FlyweightFactory();
 var Car = /** @class */ (function () {
     function Car(brand, model, color, price, maxSpeed) {
-        this.flyweight = factory.get(brand, model, color);
+        this.flyweight = factory.checkOfCar(brand, model, color);
     }
     return Car;
 }());

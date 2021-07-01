@@ -36,6 +36,14 @@ const cars = [
     new Car('Mercedes', 'GLS350', 'white', 30000, 250),
     new Car('Tesla', 'model X', 'red', 27000, 200),
 ]
+
 factory.showFlyweights()
+
+// {
+//     'BMW X5': Flyweight { brand: 'BMW', model: 'X5', color: 'black' },
+//     'Audi Q8': Flyweight { brand: 'Audi', model: 'Q8', color: 'black' },
+//     'Mercedes GLS350': Flyweight { brand: 'Mercedes', model: 'GLS350', color: 'white' },
+//     'Tesla model X': Flyweight { brand: 'Tesla', model: 'model X', color: 'red' }
+// }
 
 
